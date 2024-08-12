@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <!-- NuGet Package Metadata -->
+        <PackageId>MerakiGames.SharedDependencies</PackageId> <!-- Unique ID for your package -->
+        <Version>1.0.0</Version> <!-- Version of your package -->
+        <Authors>Garreth DEan</Authors> <!-- Your name or your team's name -->
+        <Company>MerakiGames</Company> <!-- Name of your company or organization -->
+        <Description>A shared library of common dependencies for the Modular Testing Framework projects.</Description> <!-- A brief description of what the package does -->
+        <PackageTags>shared dependencies common</PackageTags> <!-- Tags to help others find your package -->
+        <PackageLicenseExpression>MIT</PackageLicenseExpression> <!-- License type, e.g., MIT, Apache-2.0 -->
+        <RepositoryUrl>https://github.com/YourRepo</RepositoryUrl> <!-- (Optional) Link to your source code repository -->
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Playwright" Version="1.45.1" />
+        <PackageReference Include="Microsoft.Playwright.NUnit" Version="1.45.1" />
+        <PackageReference Include="Selenium.Support" Version="4.23.0" />
+        <PackageReference Include="Selenium.WebDriver" Version="4.23.0" />
+        <PackageReference Include="WebDriverManager" Version="2.17.4" />
+    </ItemGroup>
+
+</Project>
