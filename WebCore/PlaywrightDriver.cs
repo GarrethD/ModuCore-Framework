@@ -2,7 +2,7 @@ using Microsoft.Playwright;
 
 namespace WebCore;
 
-public class PlaywrightDriver
+public class PlaywrightDriver: IWebDriverWrapper
 {
         public IPage Page { get; private set; }
         private IBrowser _browser;

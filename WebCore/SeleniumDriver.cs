@@ -7,7 +7,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace WebCore;
 
-public class SeleniumDriver
+public class SeleniumDriver : IWebDriverWrapper
 {
     public IWebDriver WebDriver { get; private set; }
     private WebDriverWait _wait;
