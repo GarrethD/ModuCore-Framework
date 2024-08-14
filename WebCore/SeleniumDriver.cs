@@ -122,5 +122,20 @@ public class SeleniumDriver : IWebDriverWrapper
         WebDriver.Quit();
     }
 
+    public void Click()
+    {
+        WebDriver.FindElement(By.XPath("")).Click();
+    }
+
+    public void EnterText()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GetAttribute()
+    {
+        throw new NotImplementedException();
+    }
+
     // Add other methods as needed... 
 }

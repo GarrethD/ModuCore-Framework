@@ -1,4 +1,5 @@
 using Microsoft.Playwright;
+using OpenQA.Selenium;
 
 namespace WebCore;
 
@@ -58,6 +59,21 @@ public class PlaywrightDriver: IWebDriverWrapper
         public void Quit()
         {
             _browser.CloseAsync().GetAwaiter().GetResult();
+        }
+
+        public void Click()
+        {
+             Page.Locator("//button").ClickAsync();
+        }
+
+        public void EnterText()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GetAttribute()
+        {
+            throw new NotImplementedException();
         }
 
         // Add other methods as needed...

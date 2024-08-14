@@ -5,7 +5,7 @@ namespace TestingClient.Configuration;
 public class Config
 {
         // Default values for local testing
-        private static readonly DriverType DefaultDriver = DriverType.Playwright;
+        private static readonly DriverType DefaultDriver = DriverType.Selenium;
         private static readonly BrowserType DefaultBrowser = BrowserType.Chrome;
         private static readonly Url DefaultURL = Url.ExamplePage;
 
